@@ -1,8 +1,11 @@
 import Vue from 'vue'
-import router from './router/router'
+import router from './router'
+import App from './App'
+import store from './store'
 
 new Vue({
   el: '#app',
   router,
-  render: h => h({template: '<router-view></router-view>'})
+  store,
+  render: h => h(App)
 })
